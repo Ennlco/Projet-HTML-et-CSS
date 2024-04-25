@@ -7,15 +7,26 @@ body{
     background-color: white;
 }
 
+.mainContainer{
+    width: 100%;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
 header{
     display: flex;
+    justify-content: space-between;
 }
 
 main{
     display: flex;
     margin-top: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
+}
+
+footer{
+    background-color: #F2F2F2;
+    display: flex;
+    margin-top: 80px;
 }
 
 .searchAndFilter{
@@ -31,8 +42,6 @@ a{
 
 .logoHeader{
     margin-top: 30px;
-    margin-left: 40px;
-    margin-right: 75%;
 }
 .logoHeader img{
     width: 80px;
@@ -43,8 +52,8 @@ nav{
 }
 
 .navTxt{
-    margin-left: 45px;
     padding-top: 10px;
+    margin-right: 40px;
 }
 .navTxt:hover{
     color: #0065FC;
@@ -134,7 +143,8 @@ input{
 .hebergementsEtPopulaires section {
     background-color: #F2F2F2;
     border-radius: 20px;
-    padding: 20px
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 /* ------ Hébergements ------ */
@@ -148,11 +158,12 @@ input{
 }
 .txtHebergementEnd{
     margin-left: 20px;
-    margin-top: 40px;
+    margin-top: 60px;
 }
 
 .chooseHebergement{
     display: grid;
+    box-sizing: border-box;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     row-gap: 35px;
@@ -178,7 +189,7 @@ input{
     border-radius: 20px 20px 0px 0px;
     width: 100%;
     height: 50%;
-    object-fit: cover
+    object-fit: cover;
 }
 
 .titleCard, .txtCard{
@@ -198,12 +209,101 @@ input{
 /* -------- Populaires -------- */
 .populaires{
     width: 32%;
-    margin-left: 60px;
+    
 }
 
 .populairesTitre{
-    justify-content: space-around;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .populairesTitre img{
     width: 20px;
+}
+
+.txtCardPopulaire{
+    font-size: 16px;
+}
+
+.populaireCard{
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    margin-top: 30px;
+    transition: 200ms;
+}
+.populaireCard:hover{
+    transform: scale(1.02,1.02) ;
+}
+
+.card{
+    display: flex;
+    box-sizing: border-box;
+}
+
+.cardContent{
+    margin-left: 30px;
+}
+
+.imageCardPopulaire{
+    width: 33%;
+    height: 174px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    object-fit: cover;
+}
+
+.raitingCardPopulaire{
+    margin-top: 60px;
+    margin-bottom: 5px;
+}
+
+/* -------- Activités --------*/
+
+.activites{
+    margin-top: 50px;
+    box-sizing: border-box;
+}
+
+.chooseActivites{
+    display: flex;
+    justify-content: space-around;
+}
+
+.activitesTitle{
+    margin-bottom: 30px;
+    margin-left: 15px;
+}
+
+.cardActivites{
+    background-color: white;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    width: 23%;
+    height: 600px;
+    border-radius: 25px 25px 25px 25px;
+    transition: 300ms;
+}
+.cardActivites:hover{
+    transform: scale(1.02,1.02) ;
+}
+
+.cardActivites img{
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.titleCardActivites{
+    margin-left: 20px;
+}
+
+/* ------- Footer ------- */
+
+.info{
+    margin-right: 400px;
+    margin-left: 20px;
 }
