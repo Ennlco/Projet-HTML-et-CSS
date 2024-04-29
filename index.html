@@ -3,6 +3,7 @@
 
     <head>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Booki</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,36 +37,38 @@
                     </form>
                     <div class="filters">
                         <h2>Filtres</h2>
-                        <div class="FiltreChoix">
-                            <div>
-                                <img src="images/icone/icone_Filtre_Economique.png" alt="" class="imgFiltre">
+                        <div class="FiltreContent">
+                            <div class="FiltreChoix">
+                                <div>
+                                    <img src="images/icone/icone_Filtre_Economique.png" alt="" class="imgFiltre">
+                                </div>
+                                <div class="textFiltre">
+                                    <p>Économique</p>
+                                </div>
                             </div>
-                            <div class="textFiltre">
-                                <p>Économique</p>
+                            <div class="FiltreChoix">
+                                <div>
+                                    <img src="images/icone/icone_Filtre_Familial.png" alt="" class="imgFiltre">
+                                </div>
+                                <div class="textFiltre">
+                                    <p>Familial</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="FiltreChoix">
-                            <div>
-                                <img src="images/icone/icone_Filtre_Familial.png" alt="" class="imgFiltre">
+                            <div class="FiltreChoix">
+                                <div>
+                                    <img src="images/icone/icone_Filtre_Romantique.png" alt="" class="imgFiltre">
+                                </div>
+                                <div class="textFiltre">
+                                    <p>Romantique</p>
+                                </div>
                             </div>
-                            <div class="textFiltre">
-                                <p>Familial</p>
-                            </div>
-                        </div>
-                        <div class="FiltreChoix">
-                            <div>
-                                <img src="images/icone/icone_Filtre_Romantique.png" alt="" class="imgFiltre">
-                            </div>
-                            <div class="textFiltre">
-                                <p>Romantique</p>
-                            </div>
-                        </div>
-                        <div class="FiltreChoix">
-                            <div>
-                                <img src="images/icone/icone_Filtre_NosPepites.png" alt="" class="imgFiltre">
-                            </div>
-                            <div class="textFiltre">
-                                <p>Nos Pépites</p>
+                            <div class="FiltreChoix">
+                                <div>
+                                    <img src="images/icone/icone_Filtre_NosPepites.png" alt="" class="imgFiltre">
+                                </div>
+                                <div class="textFiltre">
+                                    <p>Nos Pépites</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -173,65 +176,67 @@
                                 <h2>Les plus populaires</h2>
                                 <img src="images/icone/icone_Filtre_Tendance.png" alt="Icone Tendance et populaire">
                             </div>
-                            <div class="populaireCard">
-                                <a href="#">
-                                    <article class="card">
-                                        <img src="images/hebergements/emile-guillemot.jpg" alt="Image de la chambre d'hôtel montrant un lit de l'Hôtel Le soleil du matin" class="imageCardPopulaire">
-                                        <div class="cardContent">
-                                            <div class="txtCardPopulaire">
-                                                <h3 class="cardTitlePopulaire">Hôtel Le soleil du matin</h3>
-                                                <p class="cardSubtitlePopulaire">Nuit à partir de 128<strong>€</strong></p>
+                            <div class="populaireContent">
+                                <div class="populaireCard">
+                                    <a href="#">
+                                        <article class="card">
+                                            <img src="images/hebergements/emile-guillemot.jpg" alt="Image de la chambre d'hôtel montrant un lit de l'Hôtel Le soleil du matin" class="imageCardPopulaire">
+                                            <div class="cardContent">
+                                                <div class="txtCardPopulaire">
+                                                    <h3 class="cardTitlePopulaire">Hôtel Le soleil du matin</h3>
+                                                    <p class="cardSubtitlePopulaire">Nuit à partir de 128<strong>€</strong></p>
+                                                </div>
+                                                <div class="raitingCardPopulaire">
+                                                    <img src="images/icone/icone_Valeur.png" alt="icone de valeur étoile" class="star">
+                                                    <img src="images/icone/icone_Valeur.png" alt="icone de valeur étoile" class="star">
+                                                    <img src="images/icone/icone_Valeur.png" alt="icone de valeur étoile" class="star">
+                                                    <img src="images/icone/icone_Valeur.png" alt="icone de valeur étoile" class="star">
+                                                    <img src="images/icone/icone_Valeur_None.png" alt="icone de valeur étoile" class="star">
+                                                </div>
                                             </div>
-                                            <div class="raitingCardPopulaire">
-                                                <img src="images/icone/icone_Valeur.png" alt="icone de valeur étoile" class="star">
-                                                <img src="images/icone/icone_Valeur.png" alt="icone de valeur étoile" class="star">
-                                                <img src="images/icone/icone_Valeur.png" alt="icone de valeur étoile" class="star">
-                                                <img src="images/icone/icone_Valeur.png" alt="icone de valeur étoile" class="star">
-                                                <img src="images/icone/icone_Valeur_None.png" alt="icone de valeur étoile" class="star">
+                                        </article>
+                                    </a>
+                                </div>
+                                <div class="populaireCard">
+                                    <a href="#">
+                                        <article class="card">
+                                            <img src="images/hebergements/aw-creative.jpg" alt="Image de la chambre d'hôtel montrant un lit de Chambre d'Hôtes Au coeur de l'eau" class="imageCardPopulaire">
+                                            <div class="cardContent">
+                                                <div class="txtCardPopulaire">
+                                                    <h3 class="cardTitlePopulaire">Chambre d'Hôtes Au coeur de l'eau</h3>
+                                                    <p class="cardSubtitlePopulaire">Nuit à partir de 71<strong>€</strong></p>
+                                                </div>
+                                                <div class="raitingCardPopulaire">
+                                                    <img src="images/icone/icone_Valeur.png" alt="icone de valeur étoile" class="star">
+                                                    <img src="images/icone/icone_Valeur.png" alt="icone de valeur étoile" class="star">
+                                                    <img src="images/icone/icone_Valeur.png" alt="icone de valeur étoile" class="star">
+                                                    <img src="images/icone/icone_Valeur.png" alt="icone de valeur étoile" class="star">
+                                                    <img src="images/icone/icone_Valeur_None.png" alt="icone de valeur étoile" class="star">
+                                                </div>
                                             </div>
-                                        </div>
-                                    </article>
-                                </a>
-                            </div>
-                            <div class="populaireCard">
-                                <a href="#">
-                                    <article class="card">
-                                        <img src="images/hebergements/aw-creative.jpg" alt="Image de la chambre d'hôtel montrant un lit de Chambre d'Hôtes Au coeur de l'eau" class="imageCardPopulaire">
-                                        <div class="cardContent">
-                                            <div class="txtCardPopulaire">
-                                                <h3 class="cardTitlePopulaire">Chambre d'Hôtes Au coeur<br>de l'eau</h3>
-                                                <p class="cardSubtitlePopulaire">Nuit à partir de 71<strong>€</strong></p>
+                                        </article>
+                                    </a>
+                                </div>
+                                <div class="populaireCard">
+                                    <a href="#">
+                                        <article class="card">
+                                            <img src="images/hebergements/febrian-zakaria2.jpg" alt="Image de la chambre d'hôtel montrant un lit de l'Hôtel Bleu et Blanc" class="imageCardPopulaire">
+                                            <div class="cardContent">
+                                                <div class="txtCardPopulaire">
+                                                    <h3 class="cardTitlePopulaire">Hôtel Bleu et Blanc</h3>
+                                                    <p class="cardSubtitlePopulaire">Nuit à partir de 68<strong>€</strong></p>
+                                                </div>
+                                                <div class="raitingCardPopulaire">
+                                                    <img src="images/icone/icone_Valeur.png" alt="icone de valeur étoile" class="star">
+                                                    <img src="images/icone/icone_Valeur.png" alt="icone de valeur étoile" class="star">
+                                                    <img src="images/icone/icone_Valeur.png" alt="icone de valeur étoile" class="star">
+                                                    <img src="images/icone/icone_Valeur.png" alt="icone de valeur étoile" class="star">
+                                                    <img src="images/icone/icone_Valeur_None.png" alt="icone de valeur étoile" class="star">
+                                                </div>
                                             </div>
-                                            <div class="raitingCardPopulaire">
-                                                <img src="images/icone/icone_Valeur.png" alt="icone de valeur étoile" class="star">
-                                                <img src="images/icone/icone_Valeur.png" alt="icone de valeur étoile" class="star">
-                                                <img src="images/icone/icone_Valeur.png" alt="icone de valeur étoile" class="star">
-                                                <img src="images/icone/icone_Valeur.png" alt="icone de valeur étoile" class="star">
-                                                <img src="images/icone/icone_Valeur_None.png" alt="icone de valeur étoile" class="star">
-                                            </div>
-                                        </div>
-                                    </article>
-                                </a>
-                            </div>
-                            <div class="populaireCard">
-                                <a href="#">
-                                    <article class="card">
-                                        <img src="images/hebergements/febrian-zakaria2.jpg" alt="Image de la chambre d'hôtel montrant un lit de l'Hôtel Bleu et Blanc" class="imageCardPopulaire">
-                                        <div class="cardContent">
-                                            <div class="txtCardPopulaire">
-                                                <h3 class="cardTitlePopulaire">Hôtel Bleu et Blanc</h3>
-                                                <p class="cardSubtitlePopulaire">Nuit à partir de 68<strong>€</strong></p>
-                                            </div>
-                                            <div class="raitingCardPopulaire">
-                                                <img src="images/icone/icone_Valeur.png" alt="icone de valeur étoile" class="star">
-                                                <img src="images/icone/icone_Valeur.png" alt="icone de valeur étoile" class="star">
-                                                <img src="images/icone/icone_Valeur.png" alt="icone de valeur étoile" class="star">
-                                                <img src="images/icone/icone_Valeur.png" alt="icone de valeur étoile" class="star">
-                                                <img src="images/icone/icone_Valeur_None.png" alt="icone de valeur étoile" class="star">
-                                            </div>
-                                        </div>
-                                    </article>
-                                </a>
+                                        </article>
+                                    </a>
+                                </div>
                             </div>
                         </section>
                     </div>

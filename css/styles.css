@@ -99,8 +99,11 @@ input{
 
 .filters{
     display: flex;
-    align-items: center;
     margin-top: 40px;
+}
+
+.FiltreContent{
+    display: flex;
 }
 
 .FiltreChoix{
@@ -113,6 +116,7 @@ input{
     border-radius: 40px;
     margin-left: 20px;
     transition: background-color 300ms;
+    height: 60px;
 }
 .FiltreChoix:hover{
     background-color: #DEEBFF;
@@ -158,26 +162,24 @@ input{
 }
 .txtHebergementEnd{
     margin-left: 20px;
-    margin-top: 60px;
+    margin-top: 5px;
 }
 
 .chooseHebergement{
     display: grid;
     box-sizing: border-box;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    row-gap: 35px;
-    column-gap: 20px;
+    grid-template-rows: 300px 300px;
+    margin-top: 40px;
+    column-gap: 3%;
 }
 
 .hebergementsCard{
     background-color: white;
     border-radius: 20px;
-    width: 300px;
-    height: 230px;
+    width: 95%;
+    height: 80%;
     padding: 5px;
-    margin-top: 20px;
-    margin-left: 20px;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
     transition: 200ms;
 }
@@ -231,8 +233,8 @@ input{
     background-color: white;
     border-radius: 20px;
     padding: 5px;
+    
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-    margin-top: 30px;
     transition: 200ms;
 }
 .populaireCard:hover{
@@ -250,7 +252,7 @@ input{
 
 .imageCardPopulaire{
     width: 33%;
-    height: 174px;
+    height: 95%;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     object-fit: cover;
@@ -306,4 +308,178 @@ input{
 .info{
     margin-right: 400px;
     margin-left: 20px;
+}
+
+/* Le code ci-dessous correspond à la version responsive uniquement */
+
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+@media screen and (max-width: 1024px) {
+
+    .navTxt{
+        margin-left: 40px;
+        margin-right: 0px;
+    }
+
+    .FiltreContent{
+        flex-direction: row;
+    }
+
+    .hebergementsEtPopulaires{
+        flex-direction: column;
+    }
+
+    .hebergements{
+        width: 100%;
+    }
+
+    .chooseHebergement{
+        column-gap: 3%;
+    }
+
+    .titleCard, .txtCard{
+        font-size: 16px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .raitingCard{
+        margin-top: 25px;
+    }
+
+    .populaires {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .populaireContent{
+        display: flex;
+        gap: 15px;
+
+    }
+
+    .populaireCard{
+         width: 33%;
+         height: 150px;
+         margin-top: 20px;
+    }
+
+    .imageCardPopulaire{
+        height: 150px;
+    }
+
+    .txtCardPopulaire{
+        font-size: 14px;
+    }
+
+    .raitingCardPopulaire{
+        margin-top: 40px;
+    }
+
+    .cardActivites{
+        height: 300px;
+    }
+
+    .cardActivites img{
+        height: 75%;
+    }
+
+    .titleCardActivites{
+        font-size: 16px;
+        margin-left: 15px;
+    }
+
+    .info{
+        margin-right: 150px;
+        margin-left: 20px;
+    }
+
+}
+
+/* Small devices (phones, less than 768px) */
+@media screen and (max-width: 767.98px) {
+
+    body{
+        margin: 0px;
+    }
+
+    .mainContainer{
+        padding: 0 0px;
+    }
+
+    header{
+        flex-direction: column;
+    }
+
+    .logoHeader{
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .logoHeader img{
+        
+        width: 25%;
+    }
+
+    nav{
+        margin-top: 30px;
+        margin-right: 0px;
+    }
+    .navTxt {
+        font-size: 20px;
+        padding-top: 0px;
+        margin-right: 0px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        border-bottom: 3px solid #F2F2F2;
+    }
+    .navTxt:hover{
+        border-bottom: 3px solid #0065FC;
+        border-top: none;
+    }
+
+    .infoBar{
+        display: none;
+    }
+
+    .filters{
+        flex-direction: column;
+    }
+    .FiltreContent{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 20px;
+    }
+    .FiltreChoix{
+        margin-left: 0px;
+    }
+
+    .hebergementsEtPopulaires section{
+        padding: 0px;
+    }
+
+    .chooseHebergement{
+        display: flex;
+        flex-direction: column;
+    }
+    .populaireContent{
+        flex-direction: column;
+    }
+
+    .chooseActivites{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+    .info{
+        margin-right: 0px;
+        margin-left: 10px;
+        margin-top: 5px;
+    }
 }
