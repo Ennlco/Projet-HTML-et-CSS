@@ -155,8 +155,13 @@ input{
     margin-top: 20px;
 }
 
-.infoBar img{
-    width: 30px;
+.fa-info{
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #0065FC;
+    border: 2px solid #F2F2F2;
+    border-radius: 30px;
 }
 
 .txtInfoBar{
