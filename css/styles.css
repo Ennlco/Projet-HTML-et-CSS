@@ -486,6 +486,10 @@ footer{
         border-top: none;
     }
 
+    .titleSearch{
+        margin-right: 20px;
+    }
+
     /* ----- Barre de recherche ---- */
     .titleSearch{
         margin-left: 20px;
@@ -536,6 +540,7 @@ footer{
     /* ----- Info barre ---- */
     .infoBar{
         margin-left: 20px;
+        margin-right: 20px;
     }
 
     /* ----- Hebergements Et Populaires ---- */
