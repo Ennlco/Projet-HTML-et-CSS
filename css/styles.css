@@ -498,10 +498,12 @@ footer{
     .search{
         display: flex;
         justify-content: center;
+        margin-left: 10px;
+        margin-right: 10px;
     } 
     
     input{
-        width: 60%;
+        width: 82%;
     }
 
     .buttonSearch{
@@ -510,6 +512,8 @@ footer{
 
     .imgSearch{
         display: flex;
+        position: relative;
+        right: 10px;
     }
 
     .fa-magnifying-glass{
@@ -525,8 +529,10 @@ footer{
         flex-direction: column;
         margin-left: 20px;
         margin-top: 25px;
+        margin-right: 20px;
     }
     .FiltreContent{
+        width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -535,6 +541,11 @@ footer{
 
     .txtFiltre{
         font-size: 15px;
+    }
+
+    .FiltreChoose{
+        justify-content: center;
+        width: 90%;
     }
 
     /* ----- Info barre ---- */
